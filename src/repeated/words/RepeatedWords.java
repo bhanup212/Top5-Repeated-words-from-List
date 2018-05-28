@@ -6,11 +6,13 @@
 package repeated.words;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Scanner;
 
 /**
  *
@@ -23,23 +25,15 @@ public class RepeatedWords {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        List<String> words = new ArrayList();
-        words.add("AAA");
-        words.add("AAA");
-        words.add("AAA");
-        words.add("BBB");
-        words.add("BBB");
-        words.add("CC");
-        words.add("CC");
-        words.add("CC");
-        words.add("CC");
-        words.add("CC");
-        words.add("XXX");
-        words.add("XXX");
-        words.add("XXX");
-        words.add("XXX");
-        words.add("QQ");
-        words.add("PP");
+       
+       
+        Scanner in = new Scanner(System.in);
+        System.out.println("Please enter a list of numbers: ");
+         List<String> words = new ArrayList();
+         String lines=in.nextLine();
+
+        String[] strs = lines.trim().split("\\s+");
+        words = Arrays.asList(strs);
         //Set<String> unique = new HashSet<>(words);
         Map<String, Integer> unique = new HashMap<>();
         
