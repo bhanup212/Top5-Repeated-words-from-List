@@ -28,7 +28,7 @@ public class RepeatedWords {
        
        
         Scanner in = new Scanner(System.in);
-        System.out.println("Please enter a list of numbers: ");
+        System.out.println("Please enter a list of Words in single line: ");
          List<String> words = new ArrayList();
          String lines=in.nextLine();
 
